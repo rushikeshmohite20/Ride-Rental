@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
+//bike card
 const BikeCard = ({ bike, onDelete, onEdit }) => {
     const navigate = useNavigate();
     const user = JSON.parse(localStorage.getItem('user'));
@@ -50,7 +51,7 @@ const BikeCard = ({ bike, onDelete, onEdit }) => {
             {bike.bikePhoto && (
                 <Card.Img
                     variant="top"
-                    src={`data:image/jpeg;base64,${bike.bikePhoto}`} 
+                    src={`data:image/jpeg;base64,${bike.bikePhoto}`}
 
                     alt={bike.bikeName}
                     style={imageStyle}
