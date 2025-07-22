@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-//bike card
 const BikeCard = ({ bike, onDelete, onEdit }) => {
     const navigate = useNavigate();
     const user = JSON.parse(localStorage.getItem('user'));
